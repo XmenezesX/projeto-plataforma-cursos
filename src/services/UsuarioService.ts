@@ -11,23 +11,22 @@ export class UsuarioService {
     return request<Usuario>(`/usuarios/${id}`);
   }
 
-  static async create(usuario: Omit<Usuario, "id" | "ID_Usuario">): Promise<Usuario> {
+  static async create(
+    usuario: Omit<Usuario, "id" | "ID_Usuario" | "DataCadastro"> & { DataCadastro?: string }
+  ): Promise<Usuario> {
     UsuarioService.validate(usuario);
-    usuario.SenhaHash = StringToBase64(usuario.SenhaHash);
+    const senhaHash = StringToBase64(usuario.SenhaHash);
     const res = await request<Usuario>("/usuarios", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(usuario),
-    });
-
-    return request<Usuario>(`/usuarios/${res.id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        ...res,
-        ID_Usuario: res.id
+        NomeCompleto: usuario.NomeCompleto,
+        Email: usuario.Email,
+        SenhaHash: senhaHash,
       }),
     });
+
+    return res;
   }
 
   static async update(id: string, usuario: Partial<Usuario>): Promise<Usuario> {

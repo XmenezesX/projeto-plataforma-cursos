@@ -1,4 +1,6 @@
-import { Routes as RoutesDom, Route } from "react-router-dom";
+import { Routes as RoutesDom, Route, Navigate } from "react-router-dom";
+import ProtectedRoute from "../components/auth/ProtectedRoute";
+import Login from "../pages/login";
 import Home from "../pages/home";
 import Courses from "../pages/courses";
 import CursoForm from "../pages/courses/form";
@@ -33,63 +35,71 @@ import { AppRoutes } from "./routes";
 export default function Routes() {
     return (
         <RoutesDom>
-            <Route path={AppRoutes.home} element={<Home />} />
+            {/* Rota Pública de Autenticação */}
+            <Route path={AppRoutes.login} element={<Login />} />
 
-            <Route path={AppRoutes.usuarios.index} element={<Usuarios />} />
-            <Route path={AppRoutes.usuarios.create} element={<UsuarioForm />} />
-            <Route path={AppRoutes.usuarios.edit} element={<UsuarioForm />} />
+            {/* Rotas Protegidas - Redirecionam para /login quando não autenticado */}
+            <Route element={<ProtectedRoute />}>
+                <Route path={AppRoutes.home} element={<Home />} />
 
-            <Route path={AppRoutes.categorias.index} element={<Categorias />} />
-            <Route path={AppRoutes.categorias.create} element={<CategoriaForm />} />
-            <Route path={AppRoutes.categorias.edit} element={<CategoriaForm />} />
+                <Route path={AppRoutes.usuarios.index} element={<Usuarios />} />
+                <Route path={AppRoutes.usuarios.create} element={<UsuarioForm />} />
+                <Route path={AppRoutes.usuarios.edit} element={<UsuarioForm />} />
 
-            <Route path={AppRoutes.courses.index} element={<Courses />} />
-            <Route path={AppRoutes.courses.create} element={<CursoForm />} />
-            <Route path={AppRoutes.courses.edit} element={<CursoForm />} />
+                <Route path={AppRoutes.categorias.index} element={<Categorias />} />
+                <Route path={AppRoutes.categorias.create} element={<CategoriaForm />} />
+                <Route path={AppRoutes.categorias.edit} element={<CategoriaForm />} />
 
-            <Route path={AppRoutes.modulos.index} element={<Modulos />} />
-            <Route path={AppRoutes.modulos.create} element={<ModuloForm />} />
-            <Route path={AppRoutes.modulos.edit} element={<ModuloForm />} />
+                <Route path={AppRoutes.courses.index} element={<Courses />} />
+                <Route path={AppRoutes.courses.create} element={<CursoForm />} />
+                <Route path={AppRoutes.courses.edit} element={<CursoForm />} />
 
-            <Route path={AppRoutes.aulas.index} element={<Aulas />} />
-            <Route path={AppRoutes.aulas.create} element={<AulaForm />} />
-            <Route path={AppRoutes.aulas.edit} element={<AulaForm />} />
+                <Route path={AppRoutes.modulos.index} element={<Modulos />} />
+                <Route path={AppRoutes.modulos.create} element={<ModuloForm />} />
+                <Route path={AppRoutes.modulos.edit} element={<ModuloForm />} />
 
-            <Route path={AppRoutes.matriculas.index} element={<Matriculas />} />
-            <Route path={AppRoutes.matriculas.create} element={<MatriculaForm />} />
-            <Route path={AppRoutes.matriculas.edit} element={<MatriculaForm />} />
+                <Route path={AppRoutes.aulas.index} element={<Aulas />} />
+                <Route path={AppRoutes.aulas.create} element={<AulaForm />} />
+                <Route path={AppRoutes.aulas.edit} element={<AulaForm />} />
 
-            <Route path={AppRoutes.progresso.index} element={<Progresso />} />
-            <Route path={AppRoutes.progresso.create} element={<ProgressoForm />} />
-            <Route path={AppRoutes.progresso.edit} element={<ProgressoForm />} />
+                <Route path={AppRoutes.matriculas.index} element={<Matriculas />} />
+                <Route path={AppRoutes.matriculas.create} element={<MatriculaForm />} />
+                <Route path={AppRoutes.matriculas.edit} element={<MatriculaForm />} />
 
-            <Route path={AppRoutes.avaliacoes.index} element={<Avaliacoes />} />
-            <Route path={AppRoutes.avaliacoes.create} element={<AvaliacaoForm />} />
-            <Route path={AppRoutes.avaliacoes.edit} element={<AvaliacaoForm />} />
+                <Route path={AppRoutes.progresso.index} element={<Progresso />} />
+                <Route path={AppRoutes.progresso.create} element={<ProgressoForm />} />
+                <Route path={AppRoutes.progresso.edit} element={<ProgressoForm />} />
 
-            <Route path={AppRoutes.trilhas.index} element={<Trilhas />} />
-            <Route path={AppRoutes.trilhas.create} element={<TrilhaForm />} />
-            <Route path={AppRoutes.trilhas.edit} element={<TrilhaForm />} />
+                <Route path={AppRoutes.avaliacoes.index} element={<Avaliacoes />} />
+                <Route path={AppRoutes.avaliacoes.create} element={<AvaliacaoForm />} />
+                <Route path={AppRoutes.avaliacoes.edit} element={<AvaliacaoForm />} />
 
-            <Route path={AppRoutes.trilhasCursos.index} element={<TrilhasCursos />} />
-            <Route path={AppRoutes.trilhasCursos.create} element={<TrilhaCursoForm />} />
-            <Route path={AppRoutes.trilhasCursos.edit} element={<TrilhaCursoForm />} />
+                <Route path={AppRoutes.trilhas.index} element={<Trilhas />} />
+                <Route path={AppRoutes.trilhas.create} element={<TrilhaForm />} />
+                <Route path={AppRoutes.trilhas.edit} element={<TrilhaForm />} />
 
-            <Route path={AppRoutes.certificados.index} element={<Certificados />} />
-            <Route path={AppRoutes.certificados.create} element={<CertificadoForm />} />
-            <Route path={AppRoutes.certificados.edit} element={<CertificadoForm />} />
+                <Route path={AppRoutes.trilhasCursos.index} element={<TrilhasCursos />} />
+                <Route path={AppRoutes.trilhasCursos.create} element={<TrilhaCursoForm />} />
+                <Route path={AppRoutes.trilhasCursos.edit} element={<TrilhaCursoForm />} />
 
-            <Route path={AppRoutes.planos.index} element={<Planos />} />
-            <Route path={AppRoutes.planos.create} element={<PlanoForm />} />
-            <Route path={AppRoutes.planos.edit} element={<PlanoForm />} />
+                <Route path={AppRoutes.certificados.index} element={<Certificados />} />
+                <Route path={AppRoutes.certificados.create} element={<CertificadoForm />} />
+                <Route path={AppRoutes.certificados.edit} element={<CertificadoForm />} />
 
-            <Route path={AppRoutes.assinaturas.index} element={<Assinaturas />} />
-            <Route path={AppRoutes.assinaturas.create} element={<AssinaturaForm />} />
-            <Route path={AppRoutes.assinaturas.edit} element={<AssinaturaForm />} />
+                <Route path={AppRoutes.planos.index} element={<Planos />} />
+                <Route path={AppRoutes.planos.create} element={<PlanoForm />} />
+                <Route path={AppRoutes.planos.edit} element={<PlanoForm />} />
 
-            <Route path={AppRoutes.pagamentos.index} element={<Pagamentos />} />
-            <Route path={AppRoutes.pagamentos.create} element={<PagamentoForm />} />
-            <Route path={AppRoutes.pagamentos.edit} element={<PagamentoForm />} />
+                <Route path={AppRoutes.assinaturas.index} element={<Assinaturas />} />
+                <Route path={AppRoutes.assinaturas.create} element={<AssinaturaForm />} />
+                <Route path={AppRoutes.assinaturas.edit} element={<AssinaturaForm />} />
+
+                <Route path={AppRoutes.pagamentos.index} element={<Pagamentos />} />
+                <Route path={AppRoutes.pagamentos.create} element={<PagamentoForm />} />
+                <Route path={AppRoutes.pagamentos.edit} element={<PagamentoForm />} />
+
+                <Route path="*" element={<Navigate to={AppRoutes.home} replace />} />
+            </Route>
         </RoutesDom>
     );
 }

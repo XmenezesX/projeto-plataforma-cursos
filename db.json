@@ -1,374 +1,62 @@
 {
   "usuarios": [
     {
-      "id": "8c14c7cb-bfcb-453a-8cc5-1ac2d36869d4",
-      "ID_Usuario": "8c14c7cb-bfcb-453a-8cc5-1ac2d36869d4",
       "NomeCompleto": "Yan Menezes",
-      "Email": "yan.menezes@plataforma.com",
-      "SenhaHash": "$2b$12$e09VDtFja8K..V95uG491eK6g9.i.K143tU65/A9t139A975v8/1a",
-      "DataCadastro": "2026-01-10T14:30:00.000Z"
-    },
-    {
-      "id": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "NomeCompleto": "João Silva",
-      "Email": "joao.silva@email.com",
-      "SenhaHash": "$2b$12$d79VDtFja8K..V95uG491eK6g9.i.K143tU65/A9t139A975v8/2b",
-      "DataCadastro": "2026-05-15T09:00:00.000Z"
-    },
-    {
-      "id": "d02cb5e3-b94d-474b-987c-5842e1bac69d",
-      "ID_Usuario": "d02cb5e3-b94d-474b-987c-5842e1bac69d",
-      "NomeCompleto": "Maria Souza",
-      "Email": "maria.souza@email.com",
-      "SenhaHash": "$2b$12$c69VDtFja8K..V95uG491eK6g9.i.K143tU65/A9t139A975v8/3c",
-      "DataCadastro": "2026-06-01T10:15:00.000Z"
-    },
-    {
-      "id": "55fd3f65-092f-41b3-b750-07fe07c318e9",
-      "ID_Usuario": "55fd3f65-092f-41b3-b750-07fe07c318e9",
-      "NomeCompleto": "Pedro Santos",
-      "Email": "pedro.santos@email.com",
-      "SenhaHash": "asdfasdfasfasdfdffas24a",
-      "DataCadastro": "2026-06-12T00:51:57.346Z"
-    },
-    {
-      "NomeCompleto": "Novo Usuario",
       "Email": "pignata.yan@gmail.com",
-      "SenhaHash": "123422231423432424",
-      "DataCadastro": "2026-06-13T04:11:48.158Z",
-      "id": "nGmXj_u6TKo",
-      "ID_Usuario": "nGmXj_u6TKo"
+      "SenhaHash": "MTIzNDEyMzQxMjM=",
+      "DataCadastro": "2026-06-13T10:26:27.673Z",
+      "id": "SCSjqk5Y8AM",
+      "ID_Usuario": "SCSjqk5Y8AM"
+    },
+    {
+      "NomeCompleto": "Teste",
+      "Email": "teste@gmail.com",
+      "SenhaHash": "dGVzdGUyMzIyMg==",
+      "DataCadastro": "2026-06-13T10:26:32.921Z",
+      "id": "h4TsH-IyNvQ",
+      "ID_Usuario": "h4TsH-IyNvQ"
     }
   ],
   "categorias": [
     {
-      "id": "3f0552d0-f287-450e-815e-c00647770cc7",
-      "ID_Categoria": "3f0552d0-f287-450e-815e-c00647770cc7",
-      "Nome": "Programação",
-      "Descricao": "Cursos de desenvolvimento web, mobile e backend."
-    },
-    {
-      "id": "42558745-24d1-40b6-bacb-6bf991a39b99",
-      "ID_Categoria": "42558745-24d1-40b6-bacb-6bf991a39b99",
-      "Nome": "Design",
-      "Descricao": "Cursos de interface, experiência do usuário e design gráfico."
-    },
-    {
-      "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3d3a1e",
-      "ID_Categoria": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3d3a1e",
-      "Nome": "Data Science",
-      "Descricao": "Cursos de análise de dados, machine learning e estatística."
-    },
-    {
-      "Nome": "Nova categoria",
-      "Descricao": "aaaaaaa",
-      "id": "WIEo7O3pKkw",
-      "ID_Categoria": "WIEo7O3pKkw"
+      "Nome": "Categoria 2",
+      "Descricao": "Descricao categoria 2",
+      "id": "Nart9I6-8fE",
+      "ID_Categoria": "Nart9I6-8fE"
     }
   ],
   "cursos": [
     {
-      "id": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "Titulo": "React Completo",
-      "Descricao": "Aprenda a criar aplicações modernas, tipadas e escaláveis com React e TypeScript.",
-      "ID_Instrutor": "8c14c7cb-bfcb-453a-8cc5-1ac2d36869d4",
-      "ID_Categoria": "3f0552d0-f287-450e-815e-c00647770cc7",
+      "Titulo": "Curso Daniel",
+      "Descricao": "aaaa",
+      "ID_Instrutor": "SCSjqk5Y8AM",
+      "ID_Categoria": "7gByuHoSKgQ",
       "Nivel": "Intermediário",
-      "DataPublicacao": "2026-02-20",
-      "TotalAulas": 5,
-      "TotalHoras": 12
-    },
-    {
-      "id": "001bf8f1-bab0-4a71-b957-6972c4c0834a",
-      "ID_Curso": "001bf8f1-bab0-4a71-b957-6972c4c0834a",
-      "Titulo": "Introdução ao Bootstrap 5",
-      "Descricao": "Desenvolva layouts responsivos de forma rápida com o framework CSS mais famoso.",
-      "ID_Instrutor": "8c14c7cb-bfcb-453a-8cc5-1ac2d36869d4",
-      "ID_Categoria": "3f0552d0-f287-450e-815e-c00647770cc7",
-      "Nivel": "Iniciante",
-      "DataPublicacao": "2026-03-01T09:00:00.000Z",
-      "TotalAulas": 1,
-      "TotalHoras": 3
-    },
-    {
-      "id": "41498af1-8396-499a-b19e-f29ea8665ec7",
-      "ID_Curso": "41498af1-8396-499a-b19e-f29ea8665ec7",
-      "Titulo": "UX/UI Design para Web",
-      "Descricao": "Conceitos fundamentais de usabilidade, wireframes e prototipagem de alta fidelidade.",
-      "ID_Instrutor": "8c14c7cb-bfcb-453a-8cc5-1ac2d36869d4",
-      "ID_Categoria": "42558745-24d1-40b6-bacb-6bf991a39b99",
-      "Nivel": "Iniciante",
-      "DataPublicacao": "2026-04-10",
-      "TotalAulas": 0,
-      "TotalHoras": 0
-    },
-    {
-      "id": "9f8d7c6b-5a4e-3d2c-1b0a-9f8e7d6c5b4a",
-      "ID_Curso": "9f8d7c6b-5a4e-3d2c-1b0a-9f8e7d6c5b4a",
-      "Titulo": "Python para Análise de Dados",
-      "Descricao": "Domine as bibliotecas Pandas, NumPy e Matplotlib para manipulação e visualização de dados.",
-      "ID_Instrutor": "8c14c7cb-bfcb-453a-8cc5-1ac2d36869d4",
-      "ID_Categoria": "WIEo7O3pKkw",
-      "Nivel": "Iniciante",
-      "DataPublicacao": "2026-06-05",
-      "TotalAulas": 0,
-      "TotalHoras": 0
-    },
-    {
-      "Titulo": "Novo Curso",
-      "Descricao": "Nova descricao do novo curso",
-      "ID_Instrutor": "nGmXj_u6TKo",
-      "ID_Categoria": "WIEo7O3pKkw",
-      "Nivel": "Avançado",
       "DataPublicacao": "2026-06-13",
-      "TotalAulas": 13,
-      "TotalHoras": 14,
-      "id": "bAa3UKSQeqg",
-      "ID_Curso": "bAa3UKSQeqg"
+      "TotalAulas": 2,
+      "TotalHoras": 5,
+      "id": "quYqTZxBMN4",
+      "ID_Curso": "quYqTZxBMN4"
     }
   ],
   "modulos": [
     {
-      "id": "0eb2c213-a562-4945-a60d-c7d8da44988b",
-      "ID_Modulo": "0eb2c213-a562-4945-a60d-c7d8da44988b",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "Titulo": "Fundamentos do React",
-      "Ordem": 1
-    },
-    {
-      "id": "eaec5158-9f21-4c23-b901-02b6d7fb6ad2",
-      "ID_Modulo": "eaec5158-9f21-4c23-b901-02b6d7fb6ad2",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "Titulo": "Hooks Avançados",
-      "Ordem": 2
-    },
-    {
-      "id": "80287d98-fd06-4ee6-9147-13bcf0d54b32",
-      "ID_Modulo": "80287d98-fd06-4ee6-9147-13bcf0d54b32",
-      "ID_Curso": "001bf8f1-bab0-4a71-b957-6972c4c0834a",
-      "Titulo": "Vire um mestre do Grid",
-      "Ordem": 1
-    },
-    {
-      "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
-      "ID_Modulo": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
-      "ID_Curso": "9f8d7c6b-5a4e-3d2c-1b0a-9f8e7d6c5b4a",
-      "Titulo": "Estruturas de Dados Básicas",
-      "Ordem": 1
-    },
-    {
-      "ID_Curso": "bAa3UKSQeqg",
-      "Titulo": "Novo Modulo",
-      "Ordem": 12,
-      "id": "t-Sp2Whnsss",
-      "ID_Modulo": "t-Sp2Whnsss"
+      "ID_Curso": "quYqTZxBMN4",
+      "Titulo": "Modulo 1 curso aaa",
+      "Ordem": 2,
+      "id": "1gVEYTSQygs",
+      "ID_Modulo": "1gVEYTSQygs"
     }
   ],
-  "aulas": [
-    {
-      "id": "6a34f363-9aba-4b61-847c-253037d0ac1e",
-      "ID_Aula": "6a34f363-9aba-4b61-847c-253037d0ac1e",
-      "ID_Modulo": "0eb2c213-a562-4945-a60d-c7d8da44988b",
-      "Titulo": "Introdução ao JSX",
-      "TipoConteudo": "Vídeo",
-      "URL_Conteudo": "https://youtube.com/embed/example-jsx",
-      "DuracaoMinutos": 15,
-      "Ordem": 1
-    },
-    {
-      "id": "d070c24e-2a84-46b9-9439-115186440242",
-      "ID_Aula": "d070c24e-2a84-46b9-9439-115186440242",
-      "ID_Modulo": "0eb2c213-a562-4945-a60d-c7d8da44988b",
-      "Titulo": "Componentes Funcionais",
-      "TipoConteudo": "Texto",
-      "URL_Conteudo": "https://youtube.com/embed/example-components",
-      "DuracaoMinutos": 20,
-      "Ordem": 2
-    },
-    {
-      "id": "02ba906e-99ab-418f-85d7-185f795abf8b",
-      "ID_Aula": "02ba906e-99ab-418f-85d7-185f795abf8b",
-      "ID_Modulo": "0eb2c213-a562-4945-a60d-c7d8da44988b",
-      "Titulo": "Quiz de State e Props",
-      "TipoConteudo": "Quiz",
-      "URL_Conteudo": "https://plataforma.com/quizzes/react-state",
-      "DuracaoMinutos": 10,
-      "Ordem": 3
-    },
-    {
-      "id": "21aa229a-b0dc-46f5-8cd8-d8d2c437fbd3",
-      "ID_Aula": "21aa229a-b0dc-46f5-8cd8-d8d2c437fbd3",
-      "ID_Modulo": "eaec5158-9f21-4c23-b901-02b6d7fb6ad2",
-      "Titulo": "Entendendo o useEffect",
-      "TipoConteudo": "Vídeo",
-      "URL_Conteudo": "https://youtube.com/embed/example-useeffect",
-      "DuracaoMinutos": 30,
-      "Ordem": 1
-    },
-    {
-      "id": "42361eac-65ff-4e7c-aa16-1455b4809d90",
-      "ID_Aula": "42361eac-65ff-4e7c-aa16-1455b4809d90",
-      "ID_Modulo": "t-Sp2Whnsss",
-      "Titulo": "Grid de 12 Colunas na Prática",
-      "TipoConteudo": "Vídeo",
-      "URL_Conteudo": "https://youtube.com/embed/example-grid",
-      "DuracaoMinutos": 25,
-      "Ordem": 1
-    }
-  ],
-  "matriculas": [
-    {
-      "id": "611b2fbf-a432-4355-906d-255825e0cd36",
-      "ID_Matricula": "611b2fbf-a432-4355-906d-255825e0cd36",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "DataMatricula": "2026-05-16",
-      "DataConclusao": "2026-07-23"
-    },
-    {
-      "id": "c88073ec-8145-4cbb-9c9b-50c94e7589fb",
-      "ID_Matricula": "c88073ec-8145-4cbb-9c9b-50c94e7589fb",
-      "ID_Usuario": "d02cb5e3-b94d-474b-987c-5842e1bac69d",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "DataMatricula": "2026-06-02",
-      "DataConclusao": "2026-06-17"
-    },
-    {
-      "id": "b51e727a-c922-4374-9521-031543b742c0",
-      "ID_Matricula": "b51e727a-c922-4374-9521-031543b742c0",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Curso": "001bf8f1-bab0-4a71-b957-6972c4c0834a",
-      "DataMatricula": "2026-05-20",
-      "DataConclusao": "2026-05-21"
-    }
-  ],
-  "progresso_aulas": [
-    {
-      "id": "097c0b75-1ee8-4084-afa1-3b66bdd438c4",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Aula": "02ba906e-99ab-418f-85d7-185f795abf8b",
-      "DataConclusao": "2026-05-16",
-      "Status": "Concluído"
-    },
-    {
-      "id": "d340fcc0-6a20-4239-af0f-7833e35332f0",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Aula": "d070c24e-2a84-46b9-9439-115186440242",
-      "DataConclusao": "2026-05-18T15:00:00.000Z",
-      "Status": "Iniciado"
-    },
-    {
-      "id": "3abb1372-a90f-4475-9449-8e359c9952c7",
-      "ID_Usuario": "d02cb5e3-b94d-474b-987c-5842e1bac69d",
-      "ID_Aula": "6a34f363-9aba-4b61-847c-253037d0ac1e",
-      "DataConclusao": "",
-      "Status": "Pendente"
-    }
-  ],
-  "avaliacoes": [
-    {
-      "id": "4a4b2c9b-5dda-425d-9829-aa1f306a1939",
-      "ID_Avaliacao": "4a4b2c9b-5dda-425d-9829-aa1f306a1939",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "Nota": 5,
-      "Comentario": "Curso simplesmente fantástico! Didática excelente.",
-      "DataAvaliacao": "2026-05-25T19:00:00.000Z"
-    },
-    {
-      "id": "00471e55-9306-4615-9327-68d8ca61aec3",
-      "ID_Avaliacao": "00471e55-9306-4615-9327-68d8ca61aec3",
-      "ID_Usuario": "d02cb5e3-b94d-474b-987c-5842e1bac69d",
-      "ID_Curso": "41498af1-8396-499a-b19e-f29ea8665ec7",
-      "Nota": 4,
-      "Comentario": "Curso muito bom, mas poderia ter mais aulas práticas.",
-      "DataAvaliacao": "2026-06-03"
-    }
-  ],
-  "trilhas": [
-    {
-      "id": "88cbb6e0-3f57-48f5-aaed-4176a5c17299",
-      "ID_Trilha": "88cbb6e0-3f57-48f5-aaed-4176a5c17299",
-      "Titulo": "Trilha Desenvolvedor Front-end",
-      "Descricao": "Aprenda a estruturar páginas com Bootstrap 5 e a criar interfaces reativas com React.",
-      "ID_Categoria": "3f0552d0-f287-450e-815e-c00647770cc7"
-    }
-  ],
-  "trilhas_cursos": [
-    {
-      "id": "d9807b65-a27c-4d5f-bd1e-6cbb245fa29e",
-      "ID_Trilha": "88cbb6e0-3f57-48f5-aaed-4176a5c17299",
-      "ID_Curso": "001bf8f1-bab0-4a71-b957-6972c4c0834a",
-      "Ordem": 1
-    },
-    {
-      "id": "042c6ed8-d767-4ce4-a01d-7b91b726528e",
-      "ID_Trilha": "88cbb6e0-3f57-48f5-aaed-4176a5c17299",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "Ordem": 2
-    }
-  ],
-  "certificados": [
-    {
-      "id": "3781e697-bf63-40d0-b1c5-80e03e016961",
-      "ID_Certificado": "3781e697-bf63-40d0-b1c5-80e03e016961",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Curso": "001bf8f1-bab0-4a71-b957-6972c4c0834a",
-      "ID_Trilha": null,
-      "CodigoVerificacao": "CERT-BOOTSTRAP5-JOAO-8849",
-      "DataEmissao": "2026-05-21T17:05:00.000Z"
-    },
-    {
-      "id": "b6a9ce90-2eb7-4acf-9a53-fa4c52c3d524",
-      "ID_Certificado": "b6a9ce90-2eb7-4acf-9a53-fa4c52c3d524",
-      "ID_Usuario": "8c14c7cb-bfcb-453a-8cc5-1ac2d36869d4",
-      "ID_Curso": "5c2cba2a-2f19-4a04-b149-f30dd1a96078",
-      "ID_Trilha": "88cbb6e0-3f57-48f5-aaed-4176a5c17299",
-      "CodigoVerificacao": "4133445",
-      "DataEmissao": "2026-06-12"
-    }
-  ],
-  "planos": [
-    {
-      "id": "9ea5da34-828c-45e4-b22b-3647f9887cec",
-      "ID_Plano": "9ea5da34-828c-45e4-b22b-3647f9887cec",
-      "Nome": "Plano Mensal",
-      "Descricao": "Acesso ilimitado a todos os cursos com renovação mensal.",
-      "Preco": 29.9,
-      "DuracaoMeses": 1
-    },
-    {
-      "id": "a89436bf-db32-470b-b350-338c4984ad87",
-      "ID_Plano": "a89436bf-db32-470b-b350-338c4984ad87",
-      "Nome": "Plano Anual",
-      "Descricao": "Acesso ilimitado a todos os cursos com desconto especial anual.",
-      "Preco": 299.9,
-      "DuracaoMeses": 12
-    }
-  ],
-  "assinaturas": [
-    {
-      "id": "e3386de6-a2dd-4a25-9ec8-3748f766a80d",
-      "ID_Assinatura": "e3386de6-a2dd-4a25-9ec8-3748f766a80d",
-      "ID_Usuario": "c0cb9280-4e90-4fc7-af95-d5c8d2148bab",
-      "ID_Plano": "a89436bf-db32-470b-b350-338c4984ad87",
-      "DataInicio": "2026-05-15T09:10:00.000Z",
-      "DataFim": "2027-05-15T09:10:00.000Z"
-    }
-  ],
-  "pagamentos": [
-    {
-      "id": "df875d3b-c75c-4d64-98cc-c34f1e1b32bb",
-      "ID_Pagamento": "df875d3b-c75c-4d64-98cc-c34f1e1b32bb",
-      "ID_Assinatura": "e3386de6-a2dd-4a25-9ec8-3748f766a80d",
-      "ValorPago": 299.9,
-      "DataPagamento": "2026-05-15T09:15:00.000Z",
-      "MetodoPagamento": "Pix",
-      "Id_Transacao_Gateway": "pay_tx_77582991048827X",
-      "DataFim": "2027-05-15T09:10:00.000Z"
-    }
-  ],
+  "aulas": [],
+  "matriculas": [],
+  "progresso_aulas": [],
+  "avaliacoes": [],
+  "trilhas": [],
+  "trilhas_cursos": [],
+  "certificados": [],
+  "planos": [],
+  "assinaturas": [],
+  "pagamentos": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

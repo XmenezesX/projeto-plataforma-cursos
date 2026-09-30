@@ -1,5 +1,6 @@
 export const AppRoutes = {
     home: "/",
+    login: "/login",
     usuarios: {
         index: "/usuarios",
         create: "/usuarios/criacao",
